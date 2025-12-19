@@ -1,0 +1,30 @@
+{
+    "en": {
+        "index": {
+            "title": "José Ignacio Candia Pacheco",
+            "typewriter": "Frontend Developer, Backend Developer, Mobile Developer, Full Stack Developer, Software Engineer"
+        },
+        "about": {
+            "title": "About",
+            "description": "Full Stack Developer with over 5 years of experience building technological solutions in the transportation sector. Specialized in platform modernization, critical process automation and user experience improvement. Proficient in modern technologies such as Next.js, Java (Jakarta EE), Node.js and DevOps tools. I stand out for my autonomy, adaptability and commitment to good practices and collaborative work.",
+            "btn": {
+                "more": "Read more",
+                "download": "Download CV"
+            }
+        }
+    },
+    "es": {
+        "index": {
+            "title": "José Ignacio Candia Pacheco",
+            "typewriter": "Desarrollador Frontend, Desarrollador Backend, Desarrollador Móvil, Desarrollador Full Stack, Ingeniero de Software"
+        },
+        "about": {
+            "title": "Sobre mí",
+            "description": "Desarrollador Full Stack con más de 5 años de experiencia construyendo soluciones tecnológicas en el sector de transporte. Especializado en modernización de plataformas, automatización de procesos críticos y mejora de la experiencia de usuario. Manejo tecnologías modernas como Next.js, Java (Jakarta EE), Node.js y herramientas DevOps. Me destaco por mi autonomía, capacidad de adaptación y compromiso con las buenas prácticas y el trabajo colaborativo.",
+            "btn": {
+                "more": "Ver más",
+                "download": "Descargar CV"
+            }
+        }
+    }
+}
