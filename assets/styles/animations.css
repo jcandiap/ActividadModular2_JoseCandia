@@ -31,3 +31,76 @@
         border-color: orange
     }
 }
+
+:root {
+    --bg-color: #fdfaf3;
+    /* Color crema de tu imagen */
+    --card-bg: #ffffff;
+    --speed: 30s;
+}
+
+.skills-section {
+    padding: 50px 0;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+}
+
+.marquee-container {
+    display: flex;
+    overflow: hidden;
+    user-select: none;
+    mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.marquee-content {
+    display: flex;
+    flex-shrink: 0;
+    gap: 20px;
+    padding: 20px;
+    animation: scroll var(--speed) linear infinite;
+}
+
+/* Pausar al pasar el mouse */
+.marquee-container:hover .marquee-content {
+    animation-play-state: paused;
+}
+
+.skill-card {
+    background: var(--card-bg);
+    padding: 15px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    color: #333;
+    /* Efecto Grayscale */
+    filter: grayscale(1);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+    cursor: default;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Hover: Color y escala */
+.skill-card:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transform: translateY(-5px);
+    color: #007bff;
+    /* O el color de tu marca */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

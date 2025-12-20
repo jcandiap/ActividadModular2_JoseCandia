@@ -11,6 +11,73 @@
                 "more": "Read more",
                 "download": "Download CV"
             }
+        },
+        "skills": {
+            "title": "Skills"
+        },
+        "experience": {
+            "title": "Experience",
+            "jobs": [
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Full Stack Developer",
+                    "date": "Mar 2024 - Present",
+                    "location": "Santiago, Chile (On-site)",
+                    "tasks": [
+                        "Development of web platform for ticket sales with Next.js, React and Redux, improving UX and performance.",
+                        "Migration of processes to microservices architectures and monoliths using Java 8 (Jakarta EE) and RESTful APIs.",
+                        "Implementation of automated notification system with Express, Bun, React Email and SendGrid.",
+                        "Modernization of legacy systems (VB6, C#) to modern frameworks such as Next.js, Angular, and Vue.js.",
+                        "Integration of payment gateways and external services via REST APIs and SOAP.",
+                        "Collaborative work under agile methodologies (SCRUM, Kanban) focused on UX/UI.",
+                        "DevOps: Administration of Linux servers, configuration of NGINX, Wildfly, and CI/CD with Jenkins.",
+                        "Version control management and clean code with Git and GitLab.",
+                        "Automation of ETL processes and maintenance scripts with Python, Node.js, and Bash.",
+                        "Development of native mobile app on Android (Java) with SQLite for offline logistics management.",
+                        "Management and optimization of Oracle, SQL Server, and PostgreSQL databases."
+                    ]
+                },
+                {
+                    "company": "Fusiona S.A.",
+                    "position": "Full Stack Developer",
+                    "date": "Nov 2023 - Jan 2024",
+                    "location": "Santiago, Chile (Remote)",
+                    "tasks": [
+                        "Technical migration of mobile app from Ionic 3 to Ionic 7 (Angular), upgrading components and improving performance.",
+                        "Technical documentation and execution of comprehensive test plans (QA) to ensure user experience.",
+                        "Validation of data integrity in backend with Node.js, Express, and MongoDB.",
+                        "Post-deployment support and resolution of legacy bugs.",
+                        "Agile management with SCRUM, JIRA, and version control in Bitbucket."
+                    ]
+                },
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Full Stack Developer",
+                    "date": "Dec 2019 - Nov 2023",
+                    "location": "Santiago, Chile (Hybrid)",
+                    "tasks": [
+                        ""
+                    ]
+                },
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Analyst programmer computational (Internship)",
+                    "date": "Dec 2018 - Feb 2019",
+                    "location": "Santiago, Chile (On-site)",
+                    "tasks": [
+                        ""
+                    ]
+                },
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Accounting Analyst",
+                    "date": "Mar 2014 - Feb 2015",
+                    "location": "Santiago, Chile (On-site)",
+                    "tasks": [
+                        ""
+                    ]
+                }
+            ]
         }
     },
     "es": {
@@ -25,6 +92,73 @@
                 "more": "Ver más",
                 "download": "Descargar CV"
             }
+        },
+        "skills": {
+            "title": "Habilidades"
+        },
+        "experience": {
+            "title": "Experiencia",
+            "jobs": [
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Desarrollador Full Stack",
+                    "date": "Mar 2024 - Presente",
+                    "location": "Santiago, Chile (Presencial)",
+                    "tasks": [
+                        "Desarrollo de plataforma web de venta de pasajes con Next.js, React y Redux, mejorando la UX y el rendimiento.",
+                        "Migración de procesos a arquitecturas de microservicios y monolitos usando Java 8 (Jakarta EE) y APIs RESTful.",
+                        "Implementación de sistema de notificaciones automatizadas con Express, Bun, React Email y SendGrid.",
+                        "Modernización de sistemas legacy (VB6, C#) a frameworks modernos como Next.js, Angular y Vue.js.",
+                        "Integración de pasarelas de pago y servicios externos mediante APIs REST y SOAP.",
+                        "Trabajo colaborativo bajo metodologías ágiles (SCRUM, Kanban) con enfoque en UX/UI.",
+                        "DevOps: Administración de servidores Linux, configuración de NGINX, Wildfly y CI/CD con Jenkins.",
+                        "Gestión de versionamiento y código limpio con Git y GitLab.",
+                        "Automatización de procesos ETL y scripts de mantenimiento con Python, Node.js y Bash.",
+                        "Desarrollo de app móvil nativa en Android (Java) con SQLite para gestión logística offline.",
+                        "Gestión y optimización de bases de datos Oracle, SQL Server y PostgreSQL."
+                    ]
+                },
+                {
+                    "company": "Fusiona S.A.",
+                    "position": "Desarrollador Full Stack",
+                    "date": "Nov 2023 - Ene 2024",
+                    "location": "Santiago, Chile (Remoto)",
+                    "tasks": [
+                        "Migración técnica de app móvil de Ionic 3 a Ionic 7 (Angular), actualizando componentes y mejorando rendimiento.",
+                        "Documentación técnica y ejecución de planes de prueba integrales (QA) para asegurar la experiencia de usuario.",
+                        "Validación de integridad de datos en backend con Node.js, Express y MongoDB.",
+                        "Soporte post-despliegue y resolución de bugs heredados durante marcha blanca.",
+                        "Gestión ágil con SCRUM, JIRA y control de versiones en Bitbucket."
+                    ]
+                },
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Desarrollador Full Stack",
+                    "date": "Dic 2019 - Nov 2023",
+                    "location": "Santiago, Chile (Hibrido)",
+                    "tasks": [
+                        ""
+                    ]
+                },
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Práctica Analista programador computacional",
+                    "date": "Dic 2018 - Feb 2019",
+                    "location": "Santiago, Chile (Presencial)",
+                    "tasks": [
+                        ""
+                    ]
+                },
+                {
+                    "company": "Pullman Bus S.A.",
+                    "position": "Analista contable",
+                    "date": "Mar 2014 - Feb 2015",
+                    "location": "Santiago, Chile (Presencial)",
+                    "tasks": [
+                        ""
+                    ]
+                }
+            ]
         }
     }
 }
