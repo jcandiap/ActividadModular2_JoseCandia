@@ -71,7 +71,7 @@ $(document).ready(function () {
 
   const changeLanguage = async (lang) => {
     try {
-      const response = await fetch('/data/lang.json');
+      const response = await fetch('../data/lang.json');
       const data = await response.json();
 
       textsToChange.each(function () {
