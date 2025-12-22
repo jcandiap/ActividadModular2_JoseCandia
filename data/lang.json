@@ -124,6 +124,54 @@
                     ]
                 }
             ] 
+        },
+        "projects": {
+            "title": "Projects",
+            "projects": [
+                {
+                    "name": "Backend Chat",
+                    "description": "Backend chat with user authentication and WebSocket implementation for real-time communication.",
+                    "link": "https://github.com/jcandiap/node-chat-app",
+                    "image": "",
+                    "detailsButton": "See project",
+                    "technologies": [
+                        "NodeJS",
+                        "Express",
+                        "Socket.io",
+                        "MongoDB",
+                        "JWT"
+                    ]
+                },
+                {
+                    "name": "Frontend Chat",
+                    "description": "Frontend chat with user authentication and WebSocket implementation for real-time communication.",
+                    "link": "https://github.com/jcandiap/nextjs-chat",
+                    "image": "",
+                    "detailsButton": "See project",
+                    "technologies": [
+                        "NextJS",
+                        "React",
+                        "Axios",
+                        "JWT",
+                        "Tailwind CSS",
+                        "Zustand"
+                    ]
+                },
+                {
+                    "name": "Resume web",
+                    "description": "Resume web with user interactions, animations and project library.",
+                    "link": "https://github.com/jcandiap/ActividadModular2_JoseCandia",
+                    "image": "",
+                    "detailsButton": "See project",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "Bootstrap",
+                        "jQuery"
+                    ]
+                }
+            ]
         }
     },
     "es": {
@@ -251,6 +299,54 @@
                     ]
                 }
             ] 
+        },
+        "projects": {
+            "title": "Proyectos",
+            "projects": [
+                {
+                    "name": "Backend Chat",
+                    "description": "Backend de chat con validación de usuarios e implementación de WebSocket para la comunicación en tiempo real.",
+                    "link": "https://github.com/jcandiap/node-chat-app",
+                    "image": "",
+                    "detailsButton": "Ver proyecto",
+                    "technologies": [
+                        "NodeJS",
+                        "Express",
+                        "Socket.io",
+                        "MongoDB",
+                        "JWT"
+                    ]
+                },
+                {
+                    "name": "Frontend Chat",
+                    "description": "Frontend de chat con rutas protegidas, autenticación y registro de usuarios con chat en tiempo real.",
+                    "link": "https://github.com/jcandiap/nextjs-chat",
+                    "image": "",
+                    "detailsButton": "Ver proyecto",
+                    "technologies": [
+                        "NextJS",
+                        "React",
+                        "Axios",
+                        "JWT",
+                        "Tailwind CSS",
+                        "Zustand"
+                    ]
+                },
+                {
+                    "name": "Curriculum web",
+                    "description": "Curriculum web con interacciones de usuarios, animaciones y biblioteca de proyectos",
+                    "link": "https://github.com/jcandiap/ActividadModular2_JoseCandia",
+                    "image": "",
+                    "detailsButton": "Ver proyecto",
+                    "technologies": [
+                        "HTML",
+                        "CSS",
+                        "JavaScript",
+                        "Bootstrap",
+                        "jQuery"
+                    ]
+                }
+            ]
         }
     }
 }

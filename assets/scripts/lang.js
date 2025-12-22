@@ -55,18 +55,54 @@ $(document).ready(function () {
           const ulHtml = skillsHtml ? `<div class="d-flex flex-wrap gap-2">${skillsHtml}</div>` : '';
 
           const eduHtml = `
-              <div class="card mb-1 border-0 col-12 col-md-6 col-lg-4">
-                  <div class="card-body">
-                      <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
-                          <h5 class="card-title mb-0 fw-bold">${edu.degree}</h5>
-                          <span class="badge ${edu.isCurrent ? 'bg-primary' : 'bg-secondary'}">${edu.date}</span>
+              <div class="col-12 col-md-6 col-lg-4">
+                  <div class="card mb-1 border-0 h-100">
+                      <div class="card-body">
+                          <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                              <h5 class="card-title mb-0 fw-bold">${edu.degree}</h5>
+                              <span class="badge ${edu.isCurrent ? 'bg-primary' : 'bg-secondary'}">${edu.date}</span>
+                          </div>
+                          <h6 class="card-subtitle mb-3 text-body-secondary">${edu.university}</h6>
+                          ${ulHtml}
                       </div>
-                      <h6 class="card-subtitle mb-3 text-body-secondary">${edu.university}</h6>
-                      ${ulHtml}
                   </div>
               </div>`;
           container.append(eduHtml);
       });
+  };
+
+  const renderProjects = (projects) => {
+    const container = $('#projects-list');
+    container.empty();
+
+    if (!projects || projects.length === 0) return;
+
+    projects.forEach(project => {
+        let technologiesHtml = '';
+        if (project.technologies && project.technologies.length > 0) {
+            technologiesHtml = project.technologies
+                .filter(tech => tech.trim() !== "")
+                .map(tech => `<span class="badge bg-primary cursor-pointer">${tech}</span>`)
+                .join('');
+        }
+        
+        const ulHtml = technologiesHtml ? `<div class="d-flex flex-wrap gap-2">${technologiesHtml}</div>` : '';
+
+        const projectHtml = `
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card border-1 h-100">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between flex-wrap gap-2 mb-4">
+                            <h5 class="card-title mb-0 fw-bold">${project.name}</h5>
+                            <a href="${project.link}" target="_blank" class="badge bg-secondary cursor-pointer text-decoration-none">${project.detailsButton}</a>
+                        </div>
+                        <h6 class="card-subtitle mb-3 text-body-secondary">${project.description}</h6>
+                        ${ulHtml}
+                    </div>
+                </div>
+            </div>`;
+        container.append(projectHtml);
+    });
   };
 
   const changeLanguage = async (lang) => {
@@ -93,6 +129,10 @@ $(document).ready(function () {
 
       if (data[lang].education && data[lang].education.education) {
         renderEducation(data[lang].education.education);
+      }
+      
+      if (data[lang].projects && data[lang].projects.projects) {
+        renderProjects(data[lang].projects.projects);
       }
       
       localStorage.setItem('preferred-lang', lang);
