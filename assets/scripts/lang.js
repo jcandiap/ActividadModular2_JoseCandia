@@ -71,7 +71,11 @@ $(document).ready(function () {
 
   const changeLanguage = async (lang) => {
     try {
-      const response = await fetch('../data/lang.json');
+      // Detectar si estamos en una subcarpeta (como /pages/)
+      const isPagesDir = window.location.pathname.includes('/pages/');
+      const jsonPath = isPagesDir ? '../data/lang.json' : 'data/lang.json';
+        
+      const response = await fetch(jsonPath);
       const data = await response.json();
 
       textsToChange.each(function () {
