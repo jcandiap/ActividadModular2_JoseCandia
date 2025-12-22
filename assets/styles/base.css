@@ -25,3 +25,7 @@
     width: 25px;
     height: 25px;
 }
+
+[data-bs-theme="dark"] .lang-button {
+    color: lightblue;
+}

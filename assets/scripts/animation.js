@@ -58,7 +58,9 @@ window.onload = function () {
 };
 
 $(document).ready(function() {
-    const $marquee = $('#marquee');
-    // Clonamos el contenido para crear el efecto infinito
-    $marquee.append($marquee.children().clone());
+    // Buscamos todos los elementos con la clase marquee-content
+    $('.marquee-content').each(function() {
+        // Clonamos los hijos de CADA fila individualmente
+        $(this).append($(this).children().clone());
+    });
 });

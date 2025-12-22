@@ -28,8 +28,3 @@ themeButtons.forEach(button => {
         updateThemeIcons(newTheme);
     });
 });
-
-$(document).ready(function() {
-    const savedLang = localStorage.getItem('preferred-lang') || 'es';
-    changeLanguage(savedLang);
-});

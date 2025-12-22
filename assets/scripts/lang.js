@@ -23,11 +23,11 @@ $(document).ready(function () {
         const ulHtml = tasksHtml ? `<ul>${tasksHtml}</ul>` : '';
 
         const jobHtml = `
-            <div class="card mb-3 border-0 shadow-sm">
+            <div class="card mb-1 border-0">
                 <div class="card-body">
                     <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
                         <h5 class="card-title mb-0 fw-bold">${job.position}</h5>
-                        <span class="badge bg-secondary">${job.date}</span>
+                        <span class="badge ${job.isCurrent ? 'bg-primary' : 'bg-secondary'}">${job.date}</span>
                     </div>
                     <h6 class="card-subtitle mb-3 text-body-secondary">${job.company} ${job.location ? `| ${job.location}` : ''}</h6>
                     ${ulHtml}

@@ -2,7 +2,14 @@
     "en": {
         "index": {
             "title": "José Ignacio Candia Pacheco",
-            "typewriter": "Frontend Developer, Backend Developer, Mobile Developer, Full Stack Developer, Software Engineer"
+            "typewriter": "Frontend Developer, Backend Developer, Mobile Developer, Full Stack Developer, Software Engineer",
+            "nav": {
+                "home": "Home",
+                "about": "About",
+                "skills": "Skills",
+                "experience": "Experience",
+                "contact": "Contact"
+            }
         },
         "about": {
             "title": "About",
@@ -22,6 +29,7 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Full Stack Developer",
                     "date": "Mar 2024 - Present",
+                    "isCurrent": true,
                     "location": "Santiago, Chile (On-site)",
                     "tasks": [
                         "Development of web platform for ticket sales with Next.js, React and Redux, improving UX and performance.",
@@ -41,6 +49,7 @@
                     "company": "Fusiona S.A.",
                     "position": "Full Stack Developer",
                     "date": "Nov 2023 - Jan 2024",
+                    "isCurrent": false,
                     "location": "Santiago, Chile (Remote)",
                     "tasks": [
                         "Technical migration of mobile app from Ionic 3 to Ionic 7 (Angular), upgrading components and improving performance.",
@@ -54,6 +63,7 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Full Stack Developer",
                     "date": "Dec 2019 - Nov 2023",
+                    "isCurrent": false,
                     "location": "Santiago, Chile (Hybrid)",
                     "tasks": [
                         ""
@@ -63,6 +73,7 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Analyst programmer computational (Internship)",
                     "date": "Dec 2018 - Feb 2019",
+                    "isCurrent": false,
                     "location": "Santiago, Chile (On-site)",
                     "tasks": [
                         ""
@@ -72,18 +83,29 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Accounting Analyst",
                     "date": "Mar 2014 - Feb 2015",
+                    "isCurrent": false,
                     "location": "Santiago, Chile (On-site)",
                     "tasks": [
                         ""
                     ]
                 }
             ]
+        },
+        "education": {
+            "title": "Education"
         }
     },
     "es": {
         "index": {
             "title": "José Ignacio Candia Pacheco",
-            "typewriter": "Desarrollador Frontend, Desarrollador Backend, Desarrollador Móvil, Desarrollador Full Stack, Ingeniero de Software"
+            "typewriter": "Desarrollador Frontend, Desarrollador Backend, Desarrollador Móvil, Desarrollador Full Stack, Ingeniero de Software",
+            "nav": {
+                "home": "Inicio",
+                "about": "Sobre mí",
+                "skills": "Habilidades",
+                "experience": "Experiencia",
+                "contact": "Contacto"
+            }
         },
         "about": {
             "title": "Sobre mí",
@@ -103,6 +125,7 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Desarrollador Full Stack",
                     "date": "Mar 2024 - Presente",
+                    "isCurrent": true,
                     "location": "Santiago, Chile (Presencial)",
                     "tasks": [
                         "Desarrollo de plataforma web de venta de pasajes con Next.js, React y Redux, mejorando la UX y el rendimiento.",
@@ -123,6 +146,7 @@
                     "position": "Desarrollador Full Stack",
                     "date": "Nov 2023 - Ene 2024",
                     "location": "Santiago, Chile (Remoto)",
+                    "isCurrent": false,
                     "tasks": [
                         "Migración técnica de app móvil de Ionic 3 a Ionic 7 (Angular), actualizando componentes y mejorando rendimiento.",
                         "Documentación técnica y ejecución de planes de prueba integrales (QA) para asegurar la experiencia de usuario.",
@@ -135,6 +159,7 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Desarrollador Full Stack",
                     "date": "Dic 2019 - Nov 2023",
+                    "isCurrent": false,
                     "location": "Santiago, Chile (Hibrido)",
                     "tasks": [
                         ""
@@ -144,6 +169,7 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Práctica Analista programador computacional",
                     "date": "Dic 2018 - Feb 2019",
+                    "isCurrent": false,
                     "location": "Santiago, Chile (Presencial)",
                     "tasks": [
                         ""
@@ -153,12 +179,42 @@
                     "company": "Pullman Bus S.A.",
                     "position": "Analista contable",
                     "date": "Mar 2014 - Feb 2015",
+                    "isCurrent": false,
                     "location": "Santiago, Chile (Presencial)",
                     "tasks": [
                         ""
                     ]
                 }
             ]
+        },
+        "education": {
+            "title": "Educación",
+            "education": [
+                {
+                    "degree": "Ingeniero de Software",
+                    "university": "Universidad de Chile",
+                    "date": "2014 - 2018",
+                    "skills": [
+                        ""
+                    ]
+                },
+                {
+                    "degree": "Contador",
+                    "university": "Universidad de Chile",
+                    "date": "2014 - 2018",
+                    "skills": [
+                        ""
+                    ]
+                },
+                {
+                    "degree": "Contador",
+                    "university": "Universidad de Chile",
+                    "date": "2014 - 2018",
+                    "skills": [
+                        ""
+                    ]
+                }
+            ] 
         }
     }
 }
