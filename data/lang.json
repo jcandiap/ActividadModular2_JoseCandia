@@ -6,7 +6,7 @@
             "nav": {
                 "home": "Home",
                 "about": "About",
-                "skills": "Skills",
+                "skills": "Skills and technologies",
                 "experience": "Experience",
                 "education": "Education",
                 "projects": "Projects",
@@ -22,7 +22,7 @@
             }
         },
         "skills": {
-            "title": "Skills"
+            "title": "Skills and technologies"
         },
         "experience": {
             "title": "Experience",
@@ -133,7 +133,7 @@
             "nav": {
                 "home": "Inicio",
                 "about": "Sobre mí",
-                "skills": "Habilidades",
+                "skills": "Habilidades y tecnologías",
                 "experience": "Experiencia",
                 "education": "Educación",
                 "projects": "Proyectos",
@@ -149,7 +149,7 @@
             }
         },
         "skills": {
-            "title": "Habilidades"
+            "title": "Habilidades y tecnologías"
         },
         "experience": {
             "title": "Experiencia",
