@@ -37,6 +37,38 @@ $(document).ready(function () {
     });
   };
 
+  const renderEducation = (education) => {
+      const container = $('#education-list');
+      container.empty();
+
+      if (!education || education.length === 0) return;
+
+      education.forEach(edu => {
+          let skillsHtml = '';
+          if (edu.skills && edu.skills.length > 0) {
+              skillsHtml = edu.skills
+                  .filter(skill => skill.trim() !== "")
+                  .map(skill => `<span class="badge bg-primary cursor-pointer">${skill}</span>`)
+                  .join('');
+          }
+          
+          const ulHtml = skillsHtml ? `<div class="d-flex flex-wrap gap-2">${skillsHtml}</div>` : '';
+
+          const eduHtml = `
+              <div class="card mb-1 border-0 col-12 col-md-6 col-lg-4">
+                  <div class="card-body">
+                      <div class="d-flex justify-content-between flex-wrap gap-2 mb-2">
+                          <h5 class="card-title mb-0 fw-bold">${edu.degree}</h5>
+                          <span class="badge ${edu.isCurrent ? 'bg-primary' : 'bg-secondary'}">${edu.date}</span>
+                      </div>
+                      <h6 class="card-subtitle mb-3 text-body-secondary">${edu.university}</h6>
+                      ${ulHtml}
+                  </div>
+              </div>`;
+          container.append(eduHtml);
+      });
+  };
+
   const changeLanguage = async (lang) => {
     try {
       const response = await fetch('data/lang.json');
@@ -53,6 +85,10 @@ $(document).ready(function () {
 
       if (data[lang].experience && data[lang].experience.jobs) {
         renderExperience(data[lang].experience.jobs);
+      }
+
+      if (data[lang].education && data[lang].education.education) {
+        renderEducation(data[lang].education.education);
       }
       
       localStorage.setItem('preferred-lang', lang);

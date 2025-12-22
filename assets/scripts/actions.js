@@ -9,7 +9,7 @@ function setBootstrapTheme(themeName) {
 }
 
 function updateThemeIcons(themeName) {
-    const icon = themeName === 'light' ? '🌙' : '☀️';
+    const icon = themeName === 'dark' ? '☀️' : '🌙';
     const themeButtons = document.querySelectorAll('.themeModeButton');
     themeButtons.forEach(button => {
         button.textContent = icon;
@@ -23,7 +23,7 @@ const themeButtons = document.querySelectorAll('.themeModeButton');
 themeButtons.forEach(button => {
     button.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-bs-theme');
-        const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         setBootstrapTheme(newTheme);
         updateThemeIcons(newTheme);
     });

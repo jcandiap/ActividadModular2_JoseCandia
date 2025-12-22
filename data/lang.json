@@ -8,6 +8,8 @@
                 "about": "About",
                 "skills": "Skills",
                 "experience": "Experience",
+                "education": "Education",
+                "projects": "Projects",
                 "contact": "Contact"
             }
         },
@@ -92,7 +94,36 @@
             ]
         },
         "education": {
-            "title": "Education"
+            "title": "Education",
+            "education": [
+                {
+                    "degree": "Bachelor of Science in Computer Science",
+                    "university": "Duoc University",
+                    "date": "2016 - 2019",
+                    "skills": [
+                        "Java", "Spring framework", "SQL", "PHP", "C#", "SCRUM", "Project management",
+                        "CSS", "HTML", "JavaScript"
+                    ]
+                },
+                {
+                    "degree": "Analyst programmer computational",
+                    "university": "CFT Duoc UC",
+                    "date": "2016 - 2018",
+                    "skills": [
+                        "Java", "C#", "SQL", "Hardware support", "Software support",
+                        "Data modeling", "Process modeling"
+                    ]
+                },
+                {
+                    "degree": "Accounting Technician (Intermediate level)",
+                    "university": "Sacred Heart Educational Center",
+                    "date": "2010 - 2013",
+                    "skills": [
+                        "Financial document management", "Financial process management",
+                        "Balance sheet", "Profit and loss statement", ""
+                    ]
+                }
+            ] 
         }
     },
     "es": {
@@ -104,6 +135,8 @@
                 "about": "Sobre mí",
                 "skills": "Habilidades",
                 "experience": "Experiencia",
+                "education": "Educación",
+                "projects": "Proyectos",
                 "contact": "Contacto"
             }
         },
@@ -191,27 +224,30 @@
             "title": "Educación",
             "education": [
                 {
-                    "degree": "Ingeniero de Software",
-                    "university": "Universidad de Chile",
-                    "date": "2014 - 2018",
+                    "degree": "Ingeniería en Informática",
+                    "university": "IP Duoc UC",
+                    "date": "2016 - 2019",
                     "skills": [
-                        ""
+                        "Java", "Spring framework", "SQL", "PHP", "C#", "SCRUM", "Gestión de proyectos",
+                        "CSS", "HTML", "JavaScript"
                     ]
                 },
                 {
-                    "degree": "Contador",
-                    "university": "Universidad de Chile",
-                    "date": "2014 - 2018",
+                    "degree": "Analista programador computacional",
+                    "university": "CFT Duoc UC",
+                    "date": "2016 - 2018",
                     "skills": [
-                        ""
+                        "Java", "C#", "SQL", "Soporte de hardware", "Soporte de software",
+                        "Modelado de datos", "Modelado de procesos"
                     ]
                 },
                 {
-                    "degree": "Contador",
-                    "university": "Universidad de Chile",
-                    "date": "2014 - 2018",
+                    "degree": "Técnico en contabilidad nivel medio",
+                    "university": "Centro educacional Sagrado Corazón",
+                    "date": "2010 - 2013",
                     "skills": [
-                        ""
+                        "Gestión de documentos contables", "Gestión de procesos contables",
+                        "Balance general", "Estado de pérdidas y ganancias"
                     ]
                 }
             ] 

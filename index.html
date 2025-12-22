@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="assets/styles/base.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="assets/styles/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/base.css">
     <link rel="stylesheet" href="assets/styles/animations.css">
     <script src="https://kit.fontawesome.com/8b42d3490b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/styles/custom.css">
@@ -36,6 +42,12 @@
                         <a class="nav-link" href="#experience" data-section="index.nav.experience">Experiencia</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#education" data-section="index.nav.education">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects" data-section="index.nav.projects">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact" data-section="index.nav.contact">Contacto</a>
                     </li>
                 </ul>
@@ -50,7 +62,7 @@
                     <li><button class="dropdown-item lang-switch" data-lang="en">🇬🇧 English</button></li>
                 </ul>
             </div>
-            <button class="btn btn-outline-dark d-none d-md-block themeModeButton" type="button">🌙</button>
+            <button class="btn btn-outline-dark d-none d-md-block themeModeButton" type="button">☀️</button>
         </div>
     </nav>
 
@@ -208,11 +220,21 @@
             <div class="row">
                 <div class="col-12">
                     <h2 data-section="education.title" class="mb-4">Educación</h2>
-                    <div id="education-list"></div>
+                    <div id="education-list" class="row"></div>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer id="footer" class="mt-5 py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p data-section="footer.text" class="mb-0">&copy; 2025 Jose Candia. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="assets/scripts/bootstrap/js/bootstrap.bundle.js"></script>
     <script src="assets/scripts/jquery/jquery-3.7.1.min.js"></script>
