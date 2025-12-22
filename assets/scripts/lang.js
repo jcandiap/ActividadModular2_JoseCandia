@@ -71,6 +71,32 @@ $(document).ready(function () {
       });
   };
 
+  const renderContactForm = (formData) => {
+    const container = $('#contact-form-list');
+    container.empty();
+
+    if (!formData) return;
+
+    const formHtml = `
+        <div class="col-12">
+            <label for="name" class="form-label">${formData.name}</label>
+            <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="col-12">
+            <label for="email" class="form-label">${formData.email}</label>
+            <input type="email" class="form-control" id="email" required>
+        </div>
+        <div class="col-12">
+            <label for="message" class="form-label">${formData.message}</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+        </div>
+        <div class="col-12 mt-3 text-end">
+            <button type="submit" class="btn btn-primary">${formData.send}</button>
+        </div>
+    `;
+    container.append(formHtml);
+  };
+
   const renderProjects = (projects) => {
     const container = $('#projects-list');
     container.empty();
@@ -133,6 +159,10 @@ $(document).ready(function () {
       
       if (data[lang].projects && data[lang].projects.projects) {
         renderProjects(data[lang].projects.projects);
+      }
+
+      if (data[lang].contact && data[lang].contact.form) {
+        renderContactForm(data[lang].contact.form);
       }
       
       localStorage.setItem('preferred-lang', lang);

@@ -28,3 +28,27 @@
         padding-top: 8rem;
     }
 }
+
+.social-media-list div #linkedin {
+    background-color: #0a66c2 !important;
+    color: white !important;
+}
+
+.social-media-list div #github {
+    background-color: #24292e !important;
+    color: white !important;
+}
+
+.social-media-list div #phone {
+    background-color: #000 !important;
+    color: white !important;
+}
+
+.social-media-list div #email {
+    background-color: #d8461d !important;
+    color: white !important;
+}
+
+.social-media-list div:hover {
+    opacity: 0.8;
+}

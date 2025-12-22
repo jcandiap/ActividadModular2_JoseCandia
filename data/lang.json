@@ -172,6 +172,24 @@
                     ]
                 }
             ]
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "If you have any questions or suggestions, don't hesitate to contact me.",
+            "formTitle": "Contact form",
+            "socialMedia": "Social media",
+            "form": {
+                "name": "Name",
+                "email": "Email",
+                "message": "Message",
+                "send": "Send"
+            },
+            "medias": {
+                "linkedin": "LinkedIn",
+                "github": "GitHub",
+                "phone": "Phone",
+                "email": "Email"
+            }
         }
     },
     "es": {
@@ -347,6 +365,24 @@
                     ]
                 }
             ]
+        },
+        "contact": {
+            "title": "Contacto",
+            "text": "Si tienes alguna pregunta o sugerencia, no dudes en contactarme.",
+            "formTitle": "Formulario de contacto",
+            "socialMedia": "Redes sociales",
+            "form": {
+                "name": "Nombre",
+                "email": "Email",
+                "message": "Mensaje",
+                "send": "Enviar"
+            },
+            "medias": {
+                "linkedin": "LinkedIn",
+                "github": "GitHub",
+                "phone": "Teléfono",
+                "email": "Correo electrónico"
+            }
         }
     }
 }
