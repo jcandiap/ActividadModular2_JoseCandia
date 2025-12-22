@@ -33,3 +33,42 @@ $('#download-resume').on('click', function() {
     const resumeUrl = '/assets/files/resume.pdf';
     window.open(resumeUrl, '_blank');
 });
+
+$('#contact-form').on('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(this);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+
+    let theme = document.documentElement.getAttribute('data-bs-theme');
+
+    if( 
+        name === '' || 
+        email === '' || 
+        message === '' || 
+        String(message).trim() === '' || 
+        String(name).trim() === '' || 
+        String(email).trim() === '' ) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            theme: theme,
+            text: 'Todos los campos son obligatorios',
+            showConfirmButton: false,
+            timer: 2000
+        });
+        return;
+    }
+
+    Swal.fire({
+        icon: 'success',
+        title: 'Enviado',
+        theme: theme,
+        text: 'Tu mensaje ha sido enviado correctamente',
+        showConfirmButton: false,
+        timer: 2000
+    });
+
+    this.reset();
+});
