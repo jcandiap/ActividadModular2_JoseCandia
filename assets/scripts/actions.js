@@ -28,3 +28,8 @@ themeButtons.forEach(button => {
         updateThemeIcons(newTheme);
     });
 });
+
+$('#download-resume').on('click', function() {
+    const resumeUrl = '/assets/files/resume.pdf';
+    window.open(resumeUrl, '_blank');
+});
