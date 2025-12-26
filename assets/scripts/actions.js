@@ -18,6 +18,20 @@ function updateThemeIcons(themeName) {
     });
 }
 
+function saveThemePreference(themeName) {
+    localStorage.setItem('theme', themeName);
+}
+
+function loadThemePreference() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        setBootstrapTheme(savedTheme);
+        updateThemeIcons(savedTheme);
+    }
+}
+
+loadThemePreference();
+
 const themeButtons = document.querySelectorAll('.themeModeButton');
 
 themeButtons.forEach(button => {
@@ -26,6 +40,7 @@ themeButtons.forEach(button => {
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         setBootstrapTheme(newTheme);
         updateThemeIcons(newTheme);
+        saveThemePreference(newTheme);
     });
 });
 
